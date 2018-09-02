@@ -3,7 +3,7 @@
 
   float: left;
   left: -$sidebar__width;
-  position: absolute;
+  position: fixed;
 
   width: $sidebar__width;
   max-width: 100%;
