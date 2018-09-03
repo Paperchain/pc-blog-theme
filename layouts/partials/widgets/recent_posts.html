@@ -13,8 +13,9 @@
   </header>
 
   <ul class='list'>
-  {{ range ( first $length ( where .Site.RegularPages "Type" "not in" $config.excludeTypes ) ) }}
-    {{ .Render "li" }}
-  {{ end }}
+    {{ range (.Paginator 5).Pages }}
+                  {{ .Render "li"}}
+              {{ end }}
   </ul>
+  {{ partial "nav/pagination" . }}
 </section>

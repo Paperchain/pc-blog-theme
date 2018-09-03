@@ -25,6 +25,18 @@
     {{ else }}
       {{- .Site.Params.info.description -}}
     {{ end }}
+  </div>
+  <div class='side-text'>
+  {{ with $config.text }}
+    {{- . | markdownify -}}
+  {{ else }}
+    {{- .Site.Params.info.text -}}
+  {{ end }}
+</div>
+  <div class='side-menu'>
+    <ul>
+      <li><a href="https://paperchain.io">paperchain.io</a></li>
+    </ul>
     </div>
   </header>
 
