@@ -12,13 +12,7 @@
       </a>
     </div>
     {{ end }}
-    <h2 class='title site-title '>
-    {{ with $config.title }}
-      {{- . -}}
-    {{ else }}
-      {{- .Site.Title -}}
-    {{ end }}
-    </h2>
+
     <div class='desc'>
     {{ with $config.description }}
       {{- . | markdownify -}}
@@ -35,6 +29,8 @@
 </div>
   <div class='side-menu'>
     <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="https://resources.paperchain.io/protocol-paper/">Protocol Paper</a></li>
       <li><a href="https://paperchain.io">paperchain.io</a></li>
     </ul>
     </div>

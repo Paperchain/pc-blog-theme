@@ -7,9 +7,13 @@
 
 <section class='widget widget-recent_posts sep-after'>
   <header>
-    <h4 class='title widget-title'>
-      {{- $config.title | default ( i18n "recentPosts" ) -}}
-    </h4>
+    <h1 class='title widget-title'>
+      {{ with $config.title }}
+        {{- . -}}
+      {{ else }}
+        {{- .Site.Title -}}
+      {{ end }}
+    </h1>
   </header>
 
   <ul class='list'>

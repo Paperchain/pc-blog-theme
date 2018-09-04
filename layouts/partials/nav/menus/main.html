@@ -3,7 +3,7 @@
 <nav id='main-menu' class='menu main-menu' aria-label='{{ i18n "mainMenu" }}'>
   <div class='container'>
     {{ partial "sidebar/toggler" . }}
-    <ul>
+    <div class="menu-text" style="float:right;"><ul>
     {{- range .Site.Menus.main -}}
       {{- $isCurrent := ( or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) ) -}}
       <li class='item {{- if $isCurrent }} current {{- end -}}'>
@@ -12,7 +12,7 @@
         </a>
       </li>
     {{- end -}}
-    </ul>
+  </ul></div>
   </div>
 </nav>
 
