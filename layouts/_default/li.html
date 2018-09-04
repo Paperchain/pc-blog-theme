@@ -11,5 +11,9 @@
 <div class="post-summary">
       {{ .Summary }}
     </div>
+    <div class="post-meta">
+    {{ partial "entry/meta/author" . }}
+    {{ partial "entry/meta/reading-time" . }}
+  </div>
   </header>
 </li>
