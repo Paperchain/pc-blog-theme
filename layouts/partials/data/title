@@ -1,6 +1,6 @@
 {{- $title := ( .Title ) -}}
 {{- $siteTitle := ( .Site.Title ) -}}
-{{- $sep := ( .Site.Params.seo.titleSeparator | default "•" ) -}}
+{{- $sep := ( .Site.Params.seo.titleSeparator | default "-" ) -}}
 {{- $title404 := ( .Site.Params.info.title404 | default $title ) -}}
 
 {{- if .IsHome -}}
