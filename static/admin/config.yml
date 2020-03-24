@@ -21,10 +21,3 @@ collections:
         name: "tags"
         widget: "list"
         default: ["news"]
-      - label: "Post Author"
-        name: "author"
-        widget: "relation"
-        collection: "authors"
-        searchFields: ["name.first", "twitterHandle"]
-        valueField: "name.first"
-        displayFields: ["twitterHandle", "followerCount"]
